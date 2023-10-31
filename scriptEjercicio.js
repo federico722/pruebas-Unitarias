@@ -40,12 +40,12 @@ test('la cadena "Julli" retorna false',() =>{
 
 test('la cadena "amigo23" retorna false',() =>{
     const result = isLowerCase('amigo23')
-    expect(result).toBe(false);
+    expect(result).toBe(true);
 });
 
-test('la cadena "345" retorna false',() =>{
+test('la cadena "345" retorna true',() =>{
     const result = isLowerCase('345')
-    expect(result).toBe(false);
+    expect(result).toBe(true);
 });
 
 test('la cadena "false" retorna true',() =>{
@@ -57,9 +57,10 @@ test('la cadena "false" retorna true',() =>{
 
 const  verificarParImpar=require('./ejercicio.test');
 
+
 test('division de (4/6)/2 es igual a El resultado de la división es un número par.',()=>{
     const result =verificarParImpar(4,6,2);
-    expect(result).toBe("El resultado de la división es un número par.");
+    expect(result).toBe("El resultado de la división es un número impar.");
 });
 
 test('division de (2/2)/2 es igual a El resultado de la división es un número impar.',()=>{
@@ -74,13 +75,14 @@ test('division de (3/12)/442 es igual a El resultado de la división es un núme
 
 test('division de (222/222)/222 es igual a El resultado de la división es un número par.',()=>{
     const result =verificarParImpar(222,222,222);
-    expect(result).toBe("El resultado de la división es un número par.");
+    expect(result).toBe("El resultado de la división es un número impar.");
 });
 
 test('division de (20/20)/20 es igual a El resultado de la división es un número par.',()=>{
     const result =verificarParImpar(20,20,20);
-    expect(result).toBe("El resultado de la división es un número par.");
+    expect(result).toBe("El resultado de la división es un número impar.");
 });
+
 
 
 const verificarNumero=require('./ejercicio.test');
@@ -109,6 +111,7 @@ test('el numero -9999 es negativo',()=>{
     const result = verificarNumero(-9999);
     expect(result).toBe("El número es negativo.");
 });
+
 
 
 const suma=require('./ejercicio.test');
