@@ -28,8 +28,7 @@ jobs:
       - with:
               node-version: 14
       # Runs a single command using the runners shell
-      - name: instalar dependencias
-        run: npm install
+      
 
       # Runs a set of commands using the runners shell
       - name: ejecutar pruebas unitarias con jest
