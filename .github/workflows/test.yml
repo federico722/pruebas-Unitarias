@@ -33,7 +33,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: ejecutar pruebas unitarias con jest
-        run: npm jest
+        run: npx jest --coverage
 
       - name: reportar pruebas unitarias con jest
         run: echo "las pruebas se han ejecutado exitosamente"
